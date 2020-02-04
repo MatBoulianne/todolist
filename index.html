@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<script src="https://kit.fontawesome.com/3cf4a7c996.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>To Do List - Vanilla JavaScript</title>
+</head>
+<body>
+	<div class="container">
+		<div class="left-side">
+			<div class="left-header">
+				<h2>Add New Project</h2>
+				<form action="#" class='project-form'>
+					<label for="project-name">Project Name : </label>
+					<div class="project-flex">
+						<input type="text" placeholder="Project Name" maxlength='20' class='project-input'>
+						<button type="submit" value='Add' class='project-btn'>ADD</button>
+					</div>
+				</form>
+			</div>
+			<div class="left-content">
+				<ul class='project-list'>
+				</ul>
+			</div>
+		</div>
+		<div class="right-side">
+			<div class="right-header">
+				<h2>Add New To Do</h2>
+				<form action="#" class='todo-form'>
+					<div>
+						<label for="project-name">Add New To Do : </label><br>
+						<input type="text" placeholder="To do..."  maxlength='45' class='todo-input'>
+					</div>
+					<div>
+						<label for="priority">Priority : </label><br>
+						<input type="radio" name="priority" value="low" id='low-priority' checked> Low
+	  					<input type="radio" name="priority" value="medium" id='medium-priority'> Medium
+	  					<input type="radio" name="priority" value="high" id='high-priority'> High
+  					</div>
+				</form>
+				<button type="submit" value='Add' class='todo-btn'>ADD</button>
+				<div class="reference-node"></div>
+			</div>
+			<div class="right-content">
+				<ul>
+					<li class="first-line"></li>
+				</ul>
+				<ul class="todo-list"></ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
